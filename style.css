@@ -1,0 +1,355 @@
+body {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 2s ease, transform 2s ease;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+body.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add your existing CSS here */
+
+.div1 {
+  display: flex;
+  padding: 10px;
+}
+
+.logo {
+  margin-top: 40px;
+  margin-right: 80px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.logo:hover {
+  box-shadow: 5px 5px 5px #d0c901;
+  transition: 0.4s ease-in-out;
+}
+
+.nav {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 15px;
+  margin: 20px;
+  padding-top: 40px;
+  color: #818181;
+}
+
+.nav:hover {
+  color: #f1f1f1;
+  transition-duration: 0.3s;
+}
+
+div {
+  justify-content: center;
+  padding-inline: 20px;
+}
+
+.fa-solid.fa-bars {
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 13ch;
+}
+
+.fa-solid.fa-bars:active {
+  transform: rotate(90deg);
+}
+
+.fa-solid.fa-house {
+  margin-left: 20ch;
+}
+
+.div2 {
+  margin-top: 60px;
+  margin-left: 20ch;
+  color: #818181;
+}
+
+.div2 i {
+  margin-left: 2ch;
+}
+
+.div2 i:hover {
+  color: #f1f1f1;
+  transition-duration: 0.3s;
+}
+
+/* Style the side navigation bar */
+.sidenav {
+  border-radius: 40px;
+  background: black;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-width: 768px) {
+  /* Side navigation should open */
+  .sidenav {
+    width: 0;
+  }
+
+  .div1 {
+    margin-left: 0;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+}
+
+#bannerimg {
+  width: 540px;
+  height: 400px;
+  border-radius: 100px;
+  margin-top: 80px;
+  margin-left: 30px;
+  opacity: 90%;
+  float: left;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+#bannerimg:hover {
+  transform: rotate(10deg);
+  opacity: 50%;
+  box-shadow: 5px 5px 5px #d0c901;
+  transition: 0.4s ease-in-out;
+}
+
+.div3 p {
+  color: #818181;
+  margin-top: 100px;
+  margin-left: 20ch;
+  font-weight: bolder;
+  width: 80px;
+  font-size: 70px;
+}
+
+.fa-solid.fa-minus {
+  color: rgb(230, 230, 117);
+}
+
+.div3 div {
+  color: #818181;
+  margin-left: 45ch;
+  font-size: 30px;
+}
+
+.sec3 div {
+  background: black;
+}
+
+#oip1 {
+  width: 540px;
+  height: 400px;
+  border-radius: 90px;
+  margin-top: 100px;
+  margin-left: 30px;
+  opacity: 90%;
+  float: right;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+#oip1:hover {
+  transform: rotate(10deg);
+  opacity: 50%;
+  box-shadow: 5px 5px 5px #d0c901;
+  transition: 0.4s ease-in-out;
+}
+
+.sec3 div p {
+  color: #818181;
+  margin-left: 2ch;
+  margin-top: 10ch;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.fa-solid.fa-feather {
+  color: rgb(230, 230, 117);
+  margin-right: 2ch;
+}
+
+#prhino {
+  font-size: 25px;
+}
+
+.sec4maindiv {
+  display: flex;
+  justify-content: start;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.lion {
+  width: 580px;
+  height: 400px;
+  border-radius: 100px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  float: left;
+}
+
+.lion:hover {
+  transform: rotate(10deg);
+  opacity: 50%;
+  box-shadow: 5px 5px 5px #d0c901;
+  transition: 0.4s ease-in-out;
+}
+
+.lioninfo {
+  margin-left: 200px;
+}
+.lionheading {
+  color: #818181;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#plion {
+  color: #818181;
+  font-size: 20px;
+  font-size: 25px;
+}
+
+#exploremoretext {
+  color: #818181;
+  font-size: 60px;
+  font-weight: bolder;
+  margin-left: 40%;
+  margin-top: 200px;
+}
+
+.exploremore {
+  padding-top: 230px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  gap: 10px; /* Space between images */
+  margin: 20px; /* Margin around the grid */
+}
+
+.exploremore img {
+  width: 80%; /* Make images fill their grid cells */
+  height: 80%; /* Make images fill their grid cells */
+  object-fit: cover; /* Ensure images maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  filter: grayscale(100%);
+  opacity: 50%;
+  transition: filter 0.5s ease, tarnsform 0.5s ease-in-out;
+  transform-origin: center bottom;
+}
+
+.exploremore img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  opacity: 100%;
+  transition: 0.4s ease-in-out;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.4;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+#exploremoretext {
+  animation: appear 20s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.exploremore img,
+.sec4,
+.sec3 {
+  animation: appear 20s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.exploremore p {
+  color: #818181;
+  margin-left: 30%;
+  font-weight: bolder;
+  font-size: 20px;
+  animation: appear 20s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 15%;
+}
+/* Style the footer */
+footer {
+  margin-top: 15%;
+  width: 100%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  border-top: 1px solid rgba(255, 255, 255, 0.3); /* Light border for depth */
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  font-family: Arial, sans-serif;
+  color: #fff; /* White text */
+}
+
+/* Style the footer container */
+#footerdiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style individual sections */
+#copyright,
+#footercontent,
+#footerdiv div {
+  text-align: center;
+}
+
+/* Style links */
+#footerdiv a {
+  color: #fff; /* White text for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#footerdiv a:hover {
+  color: #f4c10f; /* Change color on hover */
+}
+
+/* Style icons */
+.fa-solid,
+.fa-brands {
+  margin-right: 5px;
+}
